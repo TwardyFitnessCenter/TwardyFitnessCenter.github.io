@@ -1,0 +1,23 @@
+{
+  "name": "TwardyFitnessCenter.github.io",
+  "version": "1.0.0",
+  "description": "Website for Twardy Fitness Center",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwardyFitnessCenter/TwardyFitnessCenter.github.io.git"
+  },
+  "scripts": {
+    "watch-sass": "sass --watch assets/scss:assets/css"
+  },
+  "keywords": [],
+  "author": "Furrman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TwardyFitnessCenter/TwardyFitnessCenter.github.io/issues"
+  },
+  "homepage": "https://github.com/TwardyFitnessCenter/TwardyFitnessCenter.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
+}
