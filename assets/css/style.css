@@ -82,4 +82,14 @@ h1 {
   font-weight: 700;
 }
 
+footer {
+  padding-bottom: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
