@@ -3,6 +3,7 @@
 Webpage for Tomasz "Twardy" Twardowski.
 
 ## Developer settings
+- Install Git and Git Lfs (to support big files)
 - Use Visual Studio Code for working with project
 - CSS changes should be done through SCSS files
 - Use Chrome as default browser and Chrome Developer Tools to work with web page
