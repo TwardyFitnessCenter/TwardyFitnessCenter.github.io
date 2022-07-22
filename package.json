@@ -8,7 +8,7 @@
     "url": "git+https://github.com/TwardyFitnessCenter/TwardyFitnessCenter.github.io.git"
   },
   "scripts": {
-    "watch-sass": "sass --watch assets/scss:assets/css"
+    "placeholder-watch-sass": "sass --watch placeholder/scss:placeholder/css"
   },
   "keywords": [],
   "author": "Furrman",

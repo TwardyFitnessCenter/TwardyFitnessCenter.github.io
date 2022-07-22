@@ -10,4 +10,4 @@ Webpage for Tomasz "Twardy" Twardowski.
 - Test changes for desktop and mobile as well
 - Install NodeJs for dynamic Sass compilation,
 then run `npm install` in the root of the folder to install required packages
-after that run `npm run watch-sass` to watch for Sass file changes that will be applied to css
+after that run `npm run placeholder-watch-sass` to watch for Sass file changes that will be applied to css
