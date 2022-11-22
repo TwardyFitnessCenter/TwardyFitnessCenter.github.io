@@ -3,325 +3,351 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
     />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap.min" /> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <title>Twardy Fitness Center</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik+Dirt&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik+Dirt&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav>
-      <!-- logo jako przycisk
-        <div class="logo_button">
-        <img
-          src="assets/images/logo_button.png"
-          alt="Logo - Twardy Fitness Center."
-        />
-      </div>
-      -->
-      <div class="logo select_blocker">
-        <img
-          src="assets/images/logo_1.png"
-          alt="Logo - Twardy Fitness Center."
-        />
-      </div>
-      <div id="burger">
-        <div class="burger_line"></div>
-        <div class="burger_line"></div>
-        <div class="burger_line"></div>
-      </div>
-      <ul>
-        <li><a href="" target="">O MNIE</a></li>
-        <li><a href="" target="">TRENINGI</a></li>
-        <li><a href="" target="">WSPÓŁPRACA</a></li>
-        <li><a href="" target="">OFERTA</a></li>
-        <li><a href="" target="">METAMORFOZY</a></li>
-        <li><a href="" target="">OPINIE</a></li>
-        <li><a href="" target="">PARTNERZY</a></li>
-        <li><a href="" target="">KONTAKT</a></li>
-        <li><a href="" target="">BLOG</a></li>
-      </ul>
-    </nav>
-    <main>
-      <header class="select_blocker">
-        <img
-          id="bg_photo"
-          src="assets/images/header_background_extended.jpg"
-          alt="siłownia jako tło"
-        />
-        <img
-          id="twardy_main_photo"
-          src="assets/images/Twardy_main_photo.png"
-          alt="Tomasz Twardowski i jego bicepsy"
-        />
-        <div class="h1_wrapper">
-          <h1>
-            <span id="h1_twardy"> TWARDY</span>
-            <br />
-            <span id="h1_fitness"> FITNESS</span>
-            <br />
-            <span id="h1_center"> CENTER</span>
-          </h1>
-        </div>
-      </header>
-      <div class="section" id="o_mnie">
-        <div class="break_line_gradient"></div>
-
-        <div class="heading">
-          <h2>Tomasz Twardowski</h2>
-          <h3>trener personalny</h3>
-        </div>
-        <p>
-          Kulturystyką i fitnessem zajmuje się od 10 lat, a doświadczenie
-          zdobyte w sportach siłowych pozwala mi przygotować plany treningowe
-          dopasowane do indywidualnych potrzeb moich podopiecznych. Jako trener
-          personalny nieustannie się rozwijam i dążę do samodoskonalenia, a
-          ponieważ fitness to przede wszystkim moja pasja. Chętnie biorę udział
-          w kursach i szkoleniach z zakresu żywienia, suplementacji i
-          prowadzenia różnego rodzaju zajęć.
-        </p>
-      </div>
-      <div class="section" id="treningi">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Treningi</h2>
-        </div>
-        <div class="video_container">
-          <video
-            id="promo_movie"
-            autoplay="autoplay"
-            loop="loop"
-            preload="auto"
-            muted="muted"
-            width="100%"
+    <div class="container-fluid p-0 m-0">
+      <nav class="navbar navbar-expand-md navbar-dark bg-black navigation">
+        <div class="container">
+          <a class="navbar-brand my-2" href="#">
+            <img
+              src="assets/images/logo_1.png"
+              alt="Logo - Twardy Fitness Center."
+              width="55"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <source src="assets\videos\video-background.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <p>
-          Prowadzę treningi personalne z wykorzystaniem maszyn, wolnych ciężarów
-          oraz sprzętu do ćwiczeń cardio. Przed rozpoczęciem zajęć układam
-          zbilansowany jadłospis, rozpisuję plan treningowy, dobieram właściwą
-          liczbę powtórzeń i optymalne obciążenia. Prowadząc trening czuwam nad
-          prawidłową techniką i bezpieczeństwem ćwiczącego.
-        </p>
-        <div id="hexagon_wrapper">
-          <div class="hexagon"></div>
-          <div class="hexagon"></div>
-          <div class="hexagon"><h3>trening personalny</h3></div>
-          <div class="hexagon"><h3>trening siłowy</h3></div>
-          <div class="hexagon"><h3>trening funkcjonalny</h3></div>
-          <div class="hexagon"><h3>crossfit</h3></div>
-          <div class="hexagon"><h3>porady dietetyczne</h3></div>
-          <div class="hexagon"></div>
-          <div class="hexagon"></div>
-        </div>
-      </div>
-      <div class="section" id="wspolpraca">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Współpraca</h2>
-        </div>
-        <p>
-          Pierwszym krokiem do zmiany Twojego życia jest spotkanie wprowadzające
-          lub też konsultacja online. Ten moment jest szczególnie ważny, bo
-          otrzymane przeze mnie informacje pozwolą mi na ułożenie planu
-          treningowego jak i dietetycznego konkretnie pod Twoją osobę. Kolejny
-          krok to przedstawienie planu od A do Z w postaci treningu
-          personalnego.
-        </p>
-        <div class="image_container">
-          <img
-            src="assets/images/cooperation_1.jpg"
-            alt="trener i jego podopieczna podczas treningu"
-          />
-        </div>
-        <p>
-          W kwestii treningów personalnych masz pewność, że osiągniesz swój cel
-          - potrzebujesz zrzucić tkankę tłuszczową, podreperować kondycje, czy
-          też nabrać trochę masy mięśniowej - dobrze trafiłeś.
-        </p>
-        <div class="image_container">
-          <img
-            src="assets/images/cooperation_2.jpg"
-            alt="trener i jego podopieczny podczas treningu"
-          />
-        </div>
-        <p>
-          Pełen profesjonalizm, atrakcyjne ceny, indywidualne, nieszablonowe
-          podejście do treningów personalnych i kompleksowe porady dietetyczne -
-          to wszystko i wiele więcej oferuje
-          <b>Twardy Fitness Center</b>.
-        </p>
-      </div>
-      <div class="section" id="oferta">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Oferta</h2>
-        </div>
-        <div class="oferta_konsultacja">
-          <h4>konsultacja dietetyczna</h4>
-          <p class="price">150 zł</p>
-          <div class="offer_description">
-            <p>
-              Wywiad z klientem na potrzeby pisania planu treningowego plus
-              analiza składu ciała na wadze Tanita. Plan dietetyczny -
-              przykładowe posiłki, obliczanie makroskładników, pełna gama
-              dostępnych produktów z przepisami oraz wszelkie wskazówki
-              dietetyczny plus pełen monitoring postępów.
-            </p>
-          </div>
-          <h4>konsultacja dietetyczno-treningowa</h4>
-          <p class="price">250 zł</p>
-          <div class="offer_description">
-            <p>
-              Pełen zakres treningowy: plan treningowy, plan dietetyczny,
-              wskazówki treningowe i dietetyczne, plan suplementacyjny.
-              Konsultacja obejmuje stały kontakt z trenerem, nanoszenie poprawek
-              oraz stały monitoring pracy z klientem. Mierzenie postępów na
-              wadze Tanita oraz motywacyjne przygotowanie klienta do zmiany
-              nawyków żywieniowych jak również przygotowanie do zmiany stylu
-              życia.
-            </p>
-          </div>
-          <h4>konsultacja treningowa</h4>
-          <p class="price">200 zł</p>
-          <div class="offer_description">
-            <p>
-              Plan treningowy dobrany do potrzeb i możliwości klienta. Wskazówki
-              treningowe - pomocne przy wykonywaniu planu treningowego.
-              Mierzenie postępów na wadze Tanita oraz stały kontakt z klientem,
-              nanoszenie poprawek oraz stały monitoring pracy z klientem.
-            </p>
-            <a href="" target="">UMÓW SIĘ NA KONSULTACJE</a>
-          </div>
-        </div>
-        <div class="oferta_trening">
-          <h4>trening personalny</h4>
-          <p class="price">150 zł</p>
-          <div class="offer_description">
-            <p>
-              Trening jeden na jeden lub też większa ilość osób - trening na
-              siłowni, trening domowy, trening outdoor. Trening personalny -
-              zapewnia opiekę techniczną jak i merytoryczną przez okres trwania
-              treningu. Stały nadzór nad wykonywanym treningiem i kreatywne
-              porady w zakresie określonego celu treningowego.
-            </p>
-          </div>
-          <h4>pakiet treningowy</h4>
-          <p class="price">5 treningów - 550 zł</p>
-          <p class="price">10 treningów - 1000 zł</p>
-          <div class="offer_description">
-            <p>
-              Pakiet treningów - 5, 10 lub więcej treningów z klientem na
-              siłowni, w domu lub też trening outdoor. Zapewnia stały progres i
-              spełnienie założeń w każdym profilu treningowym. Trening
-              personalny z klientem - pokazanie i objaśnienie ćwiczeń zawartych
-              w planie treningowym, odpowiednie przygotowanie mobilizacyjne oraz
-              techniczne.
-            </p>
-            <a href="" target="">ZAPISZ SIĘ NA TRENING</a>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="metamorfozy">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Metamorfozy</h2>
-        </div>
-        <!--miejsce na slider/prezentację zdjęć metamorfozy-->
-      </div>
-      <div class="section" id="opinie">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Opinie</h2>
-        </div>
-        <div class="opinion_container"></div>
-        <div class="opinion_container"></div>
-        <div class="opinion_container"></div>
-        <div class="opinion_container"></div>
-      </div>
-      <div class="section" id="partnerzy">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Partnerzy</h2>
-        </div>
-        <!--miejsce na logo - partnerzy-->
-        <!--miejsce na logo - partnerzy-->
-        <!--miejsce na logo - partnerzy-->
-        <!--miejsce na logo - partnerzy-->
-      </div>
-      <div class="section" id="kontakt">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Kontakt</h2>
-        </div>
-        <div class="map_container">
-          <!--miejsce na mapke (Żółkiewskiego 15, 87-100 Toruń)-->
-        </div>
-        <h3>
-          <span class="bold">Telefon:</span> +48 000 000 000 <br />
-          <span class="bold">E-mail:</span> tomtwa2@gmail.com<br />
-          <span class="bold">Social media:</span>
-        </h3>
-        <div class="sm_wrapper">
-          <a
-            href="https://www.facebook.com/TwardyFitnessCenter"
-            target="_blank"
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
           >
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-              x="0px"
-              y="0px"
-              width="28px"
-              height="28px"
-              viewBox="0 0 383.9 381.8"
-              style="enable-background: new 0 0 383.9 381.8"
-              xml:space="preserve"
+            <div class="navbar-nav">
+              <a class="nav-link ms-3" href="#">TRENINGI</a>
+              <a class="nav-link ms-3" href="#">OFERTA</a>
+              <a class="nav-link ms-3" href="#">BLOG</a>
+              <a class="nav-link ms-3" href="#">KONTAKT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="container-fluid p-0">
+          <header
+            class="container-fluid select_blocker d-flex justify-content-center"
+          >
+            <img
+              class="p-0 m-0"
+              id="bg_photo"
+              src="assets/images/header_background_extended.jpg"
+              alt="siłownia jako tło"
+            />
+            <img
+              class="col-10 col-sm-8 col-lg-6"
+              id="twardy_main_photo"
+              src="assets/images/Twardy_main_photo.png"
+              alt="Tomasz Twardowski i jego bicepsy"
+            />
+          </header>
+          <div class="break_line_gradient"></div>
+          <div class="section text-center" id="o_mnie">
+            <div class="h2 mx-0 mt-5 mb-2">Tomasz Twardowski</div>
+            <div class="h4 mx-0 mb-4">trener personalny</div>
+            <div class="container text-center px-5 mb-5 container_p-lenght">
+              <p>
+                Kulturystyką i fitnessem zajmuje się od 10 lat,
+                a&nbsp;doświadczenie zdobyte w&nbsp;sportach siłowych pozwala
+                mi&nbsp;przygotować plany treningowe dopasowane do&nbsp;
+                indywidualnych potrzeb moich podopiecznych. Jako trener
+                personalny nieustannie się rozwijam i&nbsp;dążę
+                do&nbsp;samodoskonalenia, a&nbsp;ponieważ fitness to przede
+                wszystkim moja pasja. Chętnie biorę udział w&nbsp;kursach
+                i&nbsp;szkoleniach z&nbsp;zakresu żywienia, suplementacji
+                i&nbsp;prowadzenia różnego rodzaju zajęć.
+              </p>
+            </div>
+          </div>
+          <div class="section text-center pb-4 black-2" id="treningi">
+            <div class="video_container">
+              <video
+                id="promo_movie"
+                autoplay="autoplay"
+                loop="loop"
+                preload="auto"
+                muted="muted"
+                width="100%"
+              >
+                <source
+                  src="assets\videos\video-background.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="break_line_gradient"></div>
+            <div class="h2 mx-0 mt-5 mb-4">Treningi</div>
+            <div class="container text-center px-5 my-4 container_p-lenght">
+              <p>
+                Prowadzę treningi personalne z&nbsp;wykorzystaniem maszyn,
+                wolnych ciężarów oraz sprzętu do ćwiczeń cardio. Przed
+                rozpoczęciem zajęć układam zbilansowany jadłospis, rozpisuję
+                plan treningowy, dobieram właściwą liczbę powtórzeń
+                i&nbsp;optymalne obciążenia. Prowadząc trening czuwam nad
+                prawidłową techniką i&nbsp;bezpieczeństwem ćwiczącego.
+              </p>
+            </div>
+            <div id="hexagon_wrapper" class="my-5">
+              <div class="hexagon"></div>
+              <div class="hexagon"></div>
+              <div class="hexagon"><h3>trening personalny</h3></div>
+              <div class="hexagon"><h3>trening siłowy</h3></div>
+              <div class="hexagon"><h3>trening funkcjonalny</h3></div>
+              <div class="hexagon"><h3>crossfit</h3></div>
+              <div class="hexagon"><h3>porady dietetyczne</h3></div>
+              <div class="hexagon"></div>
+              <div class="hexagon"></div>
+            </div>
+          </div>
+          <div class="section text-center" id="wspolpraca">
+            <div class="h2 mx-0 mt-5 mb-5">Współpraca</div>
+            <div class="container text-center px-5 my-4 container_p-lenght">
+              <p>
+                Pierwszym krokiem do zmiany Twojego życia jest spotkanie
+                wprowadzające lub też konsultacja online. Ten moment jest
+                szczególnie ważny, bo otrzymane przeze mnie informacje pozwolą
+                mi na ułożenie planu treningowego jak i&nbsp;dietetycznego
+                konkretnie pod Twoją osobę. Kolejny krok to przedstawienie planu
+                od A do Z w&nbsp;postaci treningu personalnego.
+              </p>
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-xl-5 p-4">
+                  <img
+                    class="img-fluid img-shadow"
+                    src="assets/images/cooperation_1.jpg"
+                    alt="trener i jego podopieczna podczas treningu"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container text-center px-5 my-4 container_p-lenght">
+              <p>
+                W kwestii treningów personalnych masz pewność,
+                że&nbsp;osiągniesz swój cel - potrzebujesz zrzucić tkankę
+                tłuszczową, podreperować kondycje, czy też nabrać trochę masy
+                mięśniowej - dobrze trafiłeś.
+              </p>
+            </div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-xl-5 p-4">
+                  <img
+                    class="img-fluid img-shadow"
+                    src="assets/images/cooperation_2.jpg"
+                    alt="trener i jego podopieczny podczas treningu"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="container text-center px-5 mt-4 mb-5 container_p-lenght"
             >
-              <path
-                class="icon"
-                d="M218.1,381.8c0-46.3,0-92.3,0-138.7c16.4,0,32.7,0,49.4,0c2.6-16.9,5.2-33.4,7.8-50.6c-19.4,0-38.1,0-57.5,0
+              <p>
+                Pełen profesjonalizm, atrakcyjne ceny, indywidualne,
+                nieszablonowe podejście do treningów personalnych
+                i&nbsp;kompleksowe porady dietetyczne - to wszystko i&nbsp;wiele
+                więcej oferuje
+                <b>Twardy&nbsp;Fitness&nbsp;Center</b>.
+              </p>
+            </div>
+          </div>
+          <div class="section text-center black-2" id="oferta">
+            <div class="h2 mx-0 pt-5 mb-5">Oferta</div>
+            <div class="oferta_konsultacja">
+              <h4>konsultacja dietetyczna</h4>
+              <p class="price my-3">150 zł</p>
+              <div class="container text-center px-5 container_p-lenght">
+                <p>
+                  Wywiad z klientem na potrzeby pisania planu treningowego plus
+                  analiza składu ciała na wadze Tanita. Plan dietetyczny -
+                  przykładowe posiłki, obliczanie makroskładników, pełna gama
+                  dostępnych produktów z&nbsp;przepisami oraz&nbsp;wszelkie
+                  wskazówki dietetyczny plus pełen monitoring postępów.
+                </p>
+              </div>
+              <h4>konsultacja dietetyczno-treningowa</h4>
+              <p class="price my-3">250 zł</p>
+              <div class="container text-center px-5 container_p-lenght">
+                <p>
+                  Pełen zakres treningowy: plan treningowy, plan dietetyczny,
+                  wskazówki treningowe i&nbsp;dietetyczne, plan suplementacyjny.
+                  Konsultacja obejmuje stały kontakt z&nbsp;trenerem, nanoszenie
+                  poprawek oraz stały monitoring pracy z&nbsp;klientem.
+                  Mierzenie postępów na wadze Tanita oraz motywacyjne
+                  przygotowanie klienta do&nbsp;zmiany nawyków żywieniowych jak
+                  również przygotowanie do&nbsp;zmiany stylu życia.
+                </p>
+              </div>
+              <h4>konsultacja treningowa</h4>
+              <p class="price my-3">200 zł</p>
+              <div class="container text-center px-5 container_p-lenght">
+                <p>
+                  Plan treningowy dobrany do potrzeb i&nbsp;możliwości klienta.
+                  Wskazówki treningowe - pomocne przy wykonywaniu planu
+                  treningowego. Mierzenie postępów na wadze Tanita oraz stały
+                  kontakt z&nbsp;klientem, nanoszenie poprawek oraz stały
+                  monitoring pracy z&nbsp;klientem.
+                </p>
+              </div>
+              <div class="button_container">
+                <a href="" target=""
+                  ><span class="contact_button">
+                    UMÓW SIĘ NA KONSULTACJE
+                  </span></a
+                >
+              </div>
+            </div>
+            <div class="oferta_trening">
+              <h4>trening personalny</h4>
+              <p class="price my-3">150 zł</p>
+              <div class="container text-center px-5 container_p-lenght">
+                <p>
+                  Trening jeden na jeden lub też większa ilość osób - trening na
+                  siłowni, trening domowy, trening outdoor. Trening personalny -
+                  zapewnia opiekę techniczną jak i merytoryczną przez okres
+                  trwania treningu. Stały nadzór nad wykonywanym treningiem i
+                  kreatywne porady w zakresie określonego celu treningowego.
+                </p>
+              </div>
+              <h4>pakiet treningowy</h4>
+              <p class="price my-3">5 treningów - 550 zł</p>
+              <p class="price my-3">10 treningów - 1000 zł</p>
+              <div class="container text-center px-5 container_p-lenght">
+                <p>
+                  Pakiet treningów - 5, 10 lub więcej treningów z klientem na
+                  siłowni, w domu lub też trening outdoor. Zapewnia stały
+                  progres i spełnienie założeń w każdym profilu treningowym.
+                  Trening personalny z klientem - pokazanie i objaśnienie
+                  ćwiczeń zawartych w planie treningowym, odpowiednie
+                  przygotowanie mobilizacyjne oraz techniczne.
+                </p>
+              </div>
+              <div class="button_container">
+                <a href="" target=""
+                  ><span class="contact_button">ZAPISZ SIĘ NA TRENING</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="break_line_gradient"></div>
+          <div class="section text-center py-4" id="metamorfozy">
+            <div class="h2 mx-0 mt-2 mb-1">Metamorfozy</div>
+            <!--miejsce na slider/prezentację zdjęć metamorfozy-->
+          </div>
+          <div class="break_line_gradient"></div>
+          <div class="section text-center py-4 black-2" id="opinie">
+            <div class="h2 mx-0 mt-2 mb-1">Opinie</div>
+            <div class="opinion_container"></div>
+            <div class="opinion_container"></div>
+            <div class="opinion_container"></div>
+            <div class="opinion_container"></div>
+          </div>
+          <div class="break_line_gradient"></div>
+          <div class="section text-center py-4" id="partnerzy">
+            <div class="h2 mx-0 mt-2 mb-1">Partnerzy</div>
+            <!--miejsce na logo - partnerzy-->
+            <!--miejsce na logo - partnerzy-->
+            <!--miejsce na logo - partnerzy-->
+            <!--miejsce na logo - partnerzy-->
+          </div>
+          <div class="break_line_gradient"></div>
+          <div class="section text-center py-4 black-2" id="blog">
+            <div class="h2 mx-0 mt-2 mb-1">Blog</div>
+            <!--miejsce na baner kierujący na bloga o spływach kajakowych lub podstrone-->
+          </div>
+          <div class="break_line_gradient"></div>
+          <div class="section text-center" id="kontakt">
+            <div class="h2 mx-0 mt-5 mb-4">Kontakt</div>
+            <div class="map_container">
+              <!--miejsce na mapke (Żółkiewskiego 15, 87-100 Toruń)-->
+            </div>
+            <div
+              class="container text-center px-5 mt-5 mb-4 container_p-lenght"
+            >
+              <p>
+                <span class="bold">Telefon:</span> +48 000 000 000 <br />
+                <span class="bold">E-mail:</span> tomtwa2@gmail.com<br />
+                <br />Social media:
+              </p>
+            </div>
+            <div class="sm_wrapper mt-3 mb-5">
+              <a
+                href="https://www.facebook.com/TwardyFitnessCenter"
+                target="_blank"
+              >
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                  x="0px"
+                  y="0px"
+                  width="28px"
+                  height="28px"
+                  viewBox="0 0 383.9 381.8"
+                  style="enable-background: new 0 0 383.9 381.8"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="icon"
+                    d="M218.1,381.8c0-46.3,0-92.3,0-138.7c16.4,0,32.7,0,49.4,0c2.6-16.9,5.2-33.4,7.8-50.6c-19.4,0-38.1,0-57.5,0
          c0.6-16.1-1.9-31.8,2.5-47.1c4.1-14.3,12.2-20.1,27-20.2c9.3,0,18.6,0,28.2,0c0-14.9,0-29.3,0-44.1c-20.6-2-41-4.1-61.3,0
          c-27.3,5.5-45.6,25.5-49.1,55.3c-1.9,15.6-1.4,31.6-2,47.4c-0.1,2.6,0,5.3,0,8.5c-15.8,0-31.2,0-47,0c0,17.1,0,33.7,0,50.7
          c15.6,0,31,0,46.7,0c0,46.3,0,92,0,137.8C100.2,375,12.7,317.8,1.2,213C-10.5,105.9,66,16,164.5,2
          c109.1-15.5,206.8,62.5,218.2,169.1C394.5,280.4,314.9,369.3,218.1,381.8z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.instagram.com/twardyfitnesscenter/"
-            target="_blank"
-          >
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-              x="0px"
-              y="0px"
-              width="28"
-              height="28px"
-              viewBox="0 0 384.1 384"
-              style="enable-background: new 0 0 384.1 384"
-              xml:space="preserve"
-            >
-              <path
-                class="icon"
-                d="M192,128c-35.3,0-63.9,28.7-63.9,63.9c0,35.2,28.6,64,63.8,64.1c35.5,0.1,64.3-28.7,64.2-64.2C256,156.6,227.2,128,192,128z
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/twardyfitnesscenter/"
+                target="_blank"
+              >
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                  x="0px"
+                  y="0px"
+                  width="28"
+                  height="28px"
+                  viewBox="0 0 384.1 384"
+                  style="enable-background: new 0 0 384.1 384"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="icon"
+                    d="M192,128c-35.3,0-63.9,28.7-63.9,63.9c0,35.2,28.6,64,63.8,64.1c35.5,0.1,64.3-28.7,64.2-64.2C256,156.6,227.2,128,192,128z
         M192,128c-35.3,0-63.9,28.7-63.9,63.9c0,35.2,28.6,64,63.8,64.1c35.5,0.1,64.3-28.7,64.2-64.2C256,156.6,227.2,128,192,128z
         M384,113.2c0-6.3-0.3-12.7-1.4-18.9C372.5,38,327.1,0.1,269.8,0c-26,0-52,0-78,0c-26,0-52-0.1-78,0.1c-6.3,0-12.7,0.3-18.9,1.3
        C39.8,10.3,0.2,56.6,0.1,112.6c-0.1,53-0.1,106,0,159c0,6.3,0.4,12.7,1.6,18.9C12.1,346.4,57.2,384,114,384c52.2,0,104.3,0,156.5,0
@@ -333,81 +359,88 @@
        c0,35.2,28.6,64,63.8,64.1c35.5,0.1,64.3-28.7,64.2-64.2C256,156.6,227.2,128,192,128z M192,128c-35.3,0-63.9,28.7-63.9,63.9
        c0,35.2,28.6,64,63.8,64.1c35.5,0.1,64.3-28.7,64.2-64.2C256,156.6,227.2,128,192,128z M192,128c-35.3,0-63.9,28.7-63.9,63.9
        c0,35.2,28.6,64,63.8,64.1c35.5,0.1,64.3-28.7,64.2-64.2C256,156.6,227.2,128,192,128z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCzpcat_fCUKhjBVR6_0IuxQ"
-            target="_blank"
-          >
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-              x="0px"
-              y="0px"
-              width="28px"
-              height="28px"
-              viewBox="0 0 416.2 351.6"
-              style="enable-background: new 0 0 416.2 351.6"
-              xml:space="preserve"
-            >
-              <path
-                class="icon"
-                d="M416.1,176.2c0,30.3-0.6,60.7,0.2,91c0.9,36.2-24,62.8-55.6,68.1c-53.9,9-107.9,17.2-162.8,16.3
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCzpcat_fCUKhjBVR6_0IuxQ"
+                target="_blank"
+              >
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                  x="0px"
+                  y="0px"
+                  width="28px"
+                  height="28px"
+                  viewBox="0 0 416.2 351.6"
+                  style="enable-background: new 0 0 416.2 351.6"
+                  xml:space="preserve"
+                >
+                  <path
+                    class="icon"
+                    d="M416.1,176.2c0,30.3-0.6,60.7,0.2,91c0.9,36.2-24,62.8-55.6,68.1c-53.9,9-107.9,17.2-162.8,16.3
        c-33.2-0.6-66.1-4.4-98.9-9.4c-16.3-2.5-32.6-5-48.7-8.4c-29.1-6-49.9-31.6-50.1-61.6c-0.2-41.2-0.1-82.3-0.1-123.5
        c0-22.2,0-44.3,0-66.5c0-33.1,19.3-58.3,51.7-64.7c27.1-5.4,54.4-9.6,81.9-12.6C160.6,2,187.7,0.3,214.8,0
        c36.9-0.3,73.4,4.7,109.8,10.2c12.8,2,25.6,4.1,38.4,6.5c31.7,6.1,52.9,31.7,53,64C416.1,112.6,416.1,144.4,416.1,176.2z
         M160.3,249.2c42.7-24.6,84.8-48.8,127.8-73.5c-43-24.7-85.1-49-127.8-73.5C160.3,151.4,160.3,199.8,160.3,249.2z"
-              />
-            </svg>
-          </a>
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="break_line_gradient"></div>
         </div>
-      </div>
-      <div class="section" id="blog">
-        <div class="break_line_gradient"></div>
-        <div class="heading">
-          <h2>Blog</h2>
+      </main>
+      <footer>
+        <div class="container-fluid p-5">
+          <div class="row justify-content-center">
+            <div
+              class="col-6 col-lg-4 my-3 p-0 text-center footer_block_1 float-right"
+            >
+              <ul>
+                <li><a href="" target="">O MNIE</a></li>
+                <li><a href="" target="">TRENINGI</a></li>
+                <li><a href="" target="">WSPÓŁPRACA</a></li>
+                <li><a href="" target="">OFERTA</a></li>
+              </ul>
+            </div>
+            <div
+              class="col-6 col-lg-4 my-3 p-0 text-center footer_block_2 float-right"
+            >
+              <ul>
+                <li><a href="" target="">FAQ</a></li>
+                <li><a href="" target="">BLOG</a></li>
+                <li><a href="" target="">KONTAKT</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-4 my-3 text-center footer_block_3">
+              <div class="links-container">
+                <ul>
+                  <li><span class="li-none">Do pobrania:</span></li>
+                  <li>
+                    <a href="" target="">regulamin treningów</a>
+                  </li>
+                  <li>
+                    <a href="" target="">kwestionariusz aktywności fizycznej</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container h5 text-right mt-4 mb-2">
+            Metody płatności: X Y
+          </div>
+          <!--miejse na ikony metod płatności-->
         </div>
-        <!--miejsce na baner kierujący na bloga o spływach kajakowych lub podstrone-->
-      </div>
-      <div class="break_line_gradient"></div>
-    </main>
-    <footer>
-      <div class="footer_nav_container">
-        <div class="footer_block_3">
-          <p>Do pobrania:</p>
-          <ul>
-            <li><a href="" target="">regulamin treningów</a></li>
-            <li>
-              <a href="" target="">kwestionariusz aktywności fizycznej</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer_block_1">
-          <ul>
-            <li><a href="" target="">O MNIE</a></li>
-            <li><a href="" target="">TRENINGI</a></li>
-            <li><a href="" target="">WSPÓŁPRACA</a></li>
-            <li><a href="" target="">OFERTA</a></li>
-          </ul>
-        </div>
-        <div class="footer_block_2">
-          <ul>
-            <li><a href="" target="">FAQ</a></li>
-            <li><a href="" target="">BLOG</a></li>
-            <li><a href="" target="">KONTAKT</a></li>
-          </ul>
-        </div>
-      </div>
-      <h5>Metody płatności: XX</h5>
-      <!--miejse na ikony metod płatności-->
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
 </html>
