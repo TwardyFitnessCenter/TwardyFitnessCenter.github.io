@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* Colors */
+/* Fonts */
+/* For mobile phones: */
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+nav {
+  background-color: #181814;
+  width: 100vh;
+  height: 0px;
+}
+nav .logo {
+  z-index: 2;
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  top: 6vw;
+  left: 6vw;
+}
+nav .logo img {
+  width: 100%;
+}
+nav ul,
+nav li {
+  position: absolute;
+  display: none;
+}
+nav #burger {
+  z-index: 2;
+  position: fixed;
+  top: 9vw;
+  right: 6vw;
+  height: 4vw;
+  width: 6vw;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav #burger .burger_line {
+  background-color: white;
+  width: 100%;
+  height: 0.6vw;
+}
+nav #burger ul {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik Dirt";
+  /* \/ widoczność paska wyłączona \/ */
+  display: none;
+}
+nav #burger ul li {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 20px;
+}
+nav #burger ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: 0.5s;
+}
+nav #burger ul li a:hover {
+  color: #ffb321;
+}
+
+header {
+  position: relative;
+  margin: 0;
+  height: auto;
+}
+header #bg_photo {
+  position: relative;
+  bottom: 0px;
+  margin: 0;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+header #twardy_main_photo {
+  position: absolute;
+  z-index: 1;
+  width: 90vw;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .h1_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  height: 85%;
+  width: 87%;
+}
+header h1 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20vw;
+  line-height: 12vw;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header h1 #h1_twardy {
+  display: block;
+}
+header h1 #h1_fitness {
+  display: block;
+  text-align: right;
+}
+header h1 #h1_center {
+  display: block;
+}
+
+.select_blocker {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+   supported by Chrome and Opera */
+}
+
+.break_line_gradient {
+  height: 2px;
+  background-image: linear-gradient(to right, #4d7383, #ffb321);
+}
+
+body {
+  margin: 0px;
+  top: 0%;
+  left: 0%;
+  height: auto;
+  background-color: #f8f8f8;
+  width: 100vw;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #181814;
+  height: 80px;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
+}
+.heading h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fafafa;
+}
+.heading h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #ffb321;
+}
+
+.video_container {
+  max-width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  margin: 0px;
+}
+.video_container #promo_movie {
+  object-fit: contain;
+  height: 100%;
+}
+
+img {
+  max-width: 100vw;
+}
+
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  font-feature-settings: "liga" off, "kern" off;
+  margin: 6vw;
+}
+
+#treningi > #hexagon_wrapper > .hexagon > h3 {
+  color: magenta;
+  text-align: center;
+}
+
+#wspolpraca > .image_container {
+  padding-left: 6vw;
+  padding-right: 6vw;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.15));
+}
+#wspolpraca > .image_container img {
+  max-width: 88vw;
+  border-radius: 6px;
+}
+
+#oferta > .oferta_konsultacja,
+.oferta_trening {
+  font-family: "Roboto";
+  text-align: center;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+}
+
+#kontakt > .map_container {
+  display: block;
+  width: 88vw;
+  height: 60vw;
+  left: 0;
+  right: 0;
+  margin: 6vw auto 6vw auto;
+  border-radius: 6px;
+  background-color: #d9d9d9;
+}
+
+#kontakt > h3 {
+  margin: 6vw;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: "liga" off, "kern" off;
+  margin-bottom: 4vw;
+}
+#kontakt > h3 .bold {
+  font-weight: 500;
+}
+
+#kontakt > .sm_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6vw;
+}
+#kontakt > .sm_wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 2vw;
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  fill: #181814;
+}
+
+footer {
+  position: relative;
+  background-image: url(../images/footer_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6vw;
+  font-family: "Roboto";
+  background-color: #4d7383;
+}
+footer .footer_nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+footer .footer_nav_container .footer_block_1 ul,
+footer .footer_nav_container .footer_block_2 ul {
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+}
+footer .footer_nav_container .footer_block_1 ul li,
+footer .footer_nav_container .footer_block_2 ul li {
+  margin: 0px auto 15px auto;
+  list-style-type: none;
+  color: #f8f8f8;
+}
+footer .footer_nav_container .footer_block_1 ul li a,
+footer .footer_nav_container .footer_block_2 ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: 0.5s;
+}
+footer .footer_nav_container .footer_block_3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+footer .footer_nav_container .footer_block_3 p {
+  color: #f8f8f8;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+footer .footer_nav_container .footer_block_3 ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-position: inside;
+  list-style-image: url("../icons/d_icon.svg");
+  color: #f8f8f8;
+  text-decoration: none;
+}
+footer .footer_nav_container .footer_block_3 ul li {
+  margin: 0px auto 15px auto;
+  list-style-type: initial;
+}
+footer .footer_nav_container .footer_block_3 ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+footer h5 {
+  color: #fafafa;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  margin-top: 8vw;
+  margin-bottom: 0;
+}
+
+/* For tablets: */
+/*@media only screen and (min-width: 601px) {
+  body {
+    background-color: purple;
+  }
+}*/
+/* For desktop: */
+@media only screen and (min-width: 1280px) {
+  body {
+    background-color: cyan;
+  }
+  body nav {
+    margin: 0px;
+    padding: 20px;
+    height: auto;
+    background-color: #181814;
+  }
+  body nav .logo_button {
+    display: none;
+  }
+  body nav ul {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik Dirt";
+  }
+  body nav ul li {
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+  }
+  body nav ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+  }
+  body footer {
+    margin: 0px;
+    padding: 2rem;
+    background-color: #181814;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    font-family: "Roboto";
+  }
+  body footer p {
+    margin-top: 0px;
+  }
+  body footer .footer_block_1 ul,
+body footer .footer_block_2 ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+  }
+  body footer .footer_block_3 {
+    order: -1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
