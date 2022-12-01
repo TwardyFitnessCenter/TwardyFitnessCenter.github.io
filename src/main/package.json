@@ -1,0 +1,13 @@
+{
+  "name": "tfc-main",
+  "description": "Main website for Twardy Fitness Center",
+  "scripts": {
+    "build": "sass styles/scss:styles/css",
+    "watch": "sass --watch styles/scss:styles/css"
+  },
+  "author": "konrad88k",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.56.1"
+  }
+}
