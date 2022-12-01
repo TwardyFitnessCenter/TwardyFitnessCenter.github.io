@@ -1,6 +1,9 @@
 # Main website
 
+Main webpage implemented for TwardyFitnessCenter.
+
 ## Developer settings
+
 - Install Git
 - Use Visual Studio Code for working with project
 - CSS changes should be done through SCSS files

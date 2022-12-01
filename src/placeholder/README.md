@@ -1,5 +1,7 @@
 # Placeholder website
 
+Temporary webpage for TwardyFitnessCenter until main release of main webpage.
+
 ## Developer settings
 - Install Git
 - Use Visual Studio Code for working with project
