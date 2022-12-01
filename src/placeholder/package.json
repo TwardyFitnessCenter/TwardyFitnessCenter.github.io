@@ -1,0 +1,13 @@
+{
+  "name": "tfc-placeholder",
+  "description": "Placeholder website for Twardy Fitness Center",
+  "scripts": {
+    "build": "sass styles/scss:styles/css",
+    "watch": "sass --watch styles/scss:styles/css"
+  },
+  "author": "Furrman",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.56.1"
+  }
+}

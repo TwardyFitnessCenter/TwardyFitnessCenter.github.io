@@ -1,0 +1,136 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,300,700");
+@media (max-width: 767.98px) {
+  h1 {
+    font-weight: 80;
+    font-size: 53px;
+  }
+  .logo {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: 5px;
+    right: 5px;
+  }
+  .social-link {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+  }
+  .coming-back h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-weight: 90;
+    font-size: 60px;
+  }
+  .logo {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    top: 7px;
+    right: 7px;
+  }
+  .social-link {
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+  }
+  .coming-back h2 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-weight: 100;
+    font-size: 67px;
+  }
+  .logo {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 10px;
+    right: 10px;
+  }
+  .social-link {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+  }
+  .coming-back h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+body {
+  color: #232323;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+  font-size: 15pt;
+  line-height: 1.25;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body #video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  overflow: hidden;
+}
+
+p {
+  font-size: 18px;
+}
+
+.main {
+  background-size: cover;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #fff;
+}
+
+.coming-back {
+  color: #fff;
+}
+
+.coming-back p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+footer {
+  padding-bottom: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
