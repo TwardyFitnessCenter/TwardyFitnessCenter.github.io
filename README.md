@@ -1,13 +1,24 @@
 # TwardyFitnessCenter
 
-Webpage for Tomasz "Twardy" Twardowski.
+Website for Tomasz "Twardy" Twardowski.
 
-## Developer settings
-- Install Git and Git Lfs (to support big files)
-- Use Visual Studio Code for working with project
-- CSS changes should be done through SCSS files
-- Use Chrome as default browser and Chrome Developer Tools to work with web page
-- Test changes for desktop and mobile as well
-- Install NodeJs for dynamic Sass compilation,
-then run `npm install` in the root of the folder to install required packages
-after that run `npm run watch-sass` to watch for Sass file changes that will be applied to css
+# Deploy
+
+Run `./build.sh` to build both applications (placeholder & main) and publish it to docs folder.
+
+## Autors
+
+[@Furrman](https://github.com/Furrman)
+- devops
+- product owner
+- placeholder website implementation
+
+[@konrad88k](https://github.com/konrad88k)
+- design UI/UX
+- main website implementation
+
+## License
+
+Source code is open-source for anyone to use.
+Assets are private and not allowed to used by others.
+Owner of assets is TwardyFitnessCenter.
