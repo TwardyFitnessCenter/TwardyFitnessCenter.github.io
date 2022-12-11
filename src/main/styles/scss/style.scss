@@ -1,4 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
 
 /* Colors */
 $primary_color: #ffc600;
@@ -24,24 +29,5 @@ body {
   margin: 0;
 }
 section {
-  height: 100vh;
-}
-section:nth-child(1) {
-  background: black;
-}
-section:nth-child(2) {
-  background: lightgreen;
-}
-section:nth-child(3) {
-  background: purple;
-}
-section:nth-child(4) {
-  background: red;
-}
-section:nth-child(5) {
-  background: yellow;
-}
-
-#video-background {
   height: 100vh;
 }

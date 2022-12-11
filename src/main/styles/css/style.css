@@ -10769,26 +10769,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Colors */
-/* Fonts */
-/* For mobile phones: */
-::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-body {
-  height: 100vh;
-  margin: 0;
-}
-
-section {
-  height: 100vh;
-}
-
 section:nth-child(1) {
   background: black;
+}
+
+#video-background {
+  height: 100vh;
 }
 
 section:nth-child(2) {
@@ -10807,7 +10793,21 @@ section:nth-child(5) {
   background: yellow;
 }
 
-#video-background {
+/* Colors */
+/* Fonts */
+/* For mobile phones: */
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+section {
   height: 100vh;
 }
 
