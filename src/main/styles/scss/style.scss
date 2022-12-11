@@ -1,4 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
 
 /* Colors */
 $primary_color: #ffc600;
@@ -17,4 +22,12 @@ $secondary_font: "Rubik Dirt";
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+section {
+  height: 100vh;
 }
