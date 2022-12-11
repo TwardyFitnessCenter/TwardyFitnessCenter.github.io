@@ -10807,4 +10807,8 @@ section:nth-child(5) {
   background: yellow;
 }
 
+#video-background {
+  height: 100vh;
+}
+
 /*# sourceMappingURL=style.css.map */
