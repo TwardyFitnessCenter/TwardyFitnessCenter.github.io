@@ -18,3 +18,27 @@ $secondary_font: "Rubik Dirt";
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+section {
+  height: 100vh;
+}
+section:nth-child(1) {
+  background: black;
+}
+section:nth-child(2) {
+  background: lightgreen;
+}
+section:nth-child(3) {
+  background: purple;
+}
+section:nth-child(4) {
+  background: red;
+}
+section:nth-child(5) {
+  background: yellow;
+}
