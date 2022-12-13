@@ -1,4 +1,3 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "section1";
 @import "section2";
 @import "section3";
@@ -23,7 +22,9 @@ $secondary_font: "Rubik Dirt";
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   height: 100vh;
   margin: 0;
