@@ -8,14 +8,14 @@ echo Project used on /preview - $subproject_name
 
 build_project() {
     echo Build main project $project_name
-    npm --prefix src/$project_name/ --cwd src/$project_name/ install src/$project_name/
-    npm --prefix src/$project_name/--cwd src/$project_name/ run build
+    npm --prefix src/$project_name/  install src/$project_name/
+    npm --prefix src/$project_name/ run build
 }
 
 build_subproject() {
     echo Build subproject $subproject_name
-    npm --prefix src/$project_name/ --cwd src/$subproject_name/ install src/$subproject_name/
-    npm --prefix src/$project_name/ --cwd src/$subproject_name/ run build
+    npm --prefix src/$project_name/ install src/$subproject_name/
+    npm --prefix src/$project_name/ run build
 }
 
 copy_project() {
