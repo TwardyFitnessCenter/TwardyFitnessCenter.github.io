@@ -1,0 +1,57 @@
+<html>
+  <head>
+  <style type=text/css>
+    body {
+      color: gray;
+      font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+      font-size: 15pt;
+      line-height: 1.25;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    img {
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #redirect {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+  </style>
+  </head>
+
+  <body>
+    <div id="redirect">
+      <h1 id="headline">Przekierowanie za</h1>
+      <h2 id="counter">5</h2>
+    </div>
+    <img src="assets/images/error404.jpg" />
+  </body>
+
+  <script>
+      setInterval(function() {
+          var div = document.querySelector("#counter");
+          var count = div.textContent * 1 - 1;
+          if (count < 0) {
+            count = 0;
+          }
+          div.textContent = count;
+          if (count <= 0) {
+              window.location.replace("http://www.twardyfitnesscenter.pl/");
+          }
+      }, 1000);
+  </script>
+</html>
