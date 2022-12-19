@@ -1,9 +1,34 @@
 
 section:nth-child(1) {
-  background: black;
+  background: rgb(255, 0, 191);
 }
 
-#video-background {
-  height: 100vh;
-  width: 100%;
+.video-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: calc(100vh - 52px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+#video-background {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+nav ul li.active a{
+  transition: 0.4s;
+  color: rgb(255, 230, 0);
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    nav ul {
+      display: none;
+    }
+    .burger {
+      display: flex;
+    }
+  }
