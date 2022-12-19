@@ -42,6 +42,11 @@ copy_subproject() {
     cp -r src/${subproject_name}/index.html docs/preview
 }
 
+copy_404() {
+    echo Copy 404 error page
+    cp src/404.html docs/
+}
+
 build_project
 build_subproject
 
@@ -51,3 +56,4 @@ cp -r CNAME docs
 
 copy_project
 copy_subproject
+copy_404
