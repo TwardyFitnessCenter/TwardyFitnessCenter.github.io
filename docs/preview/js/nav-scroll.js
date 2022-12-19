@@ -11,7 +11,7 @@ function scrollFunction() {
     document.getElementById("navbar").style.background ="rgba(20,20,20,0)";
   } else {
     document.getElementById("navbar").style.height = "52px";
-    document.getElementById("navbar").style.background = "rgba(20,20,20,1)";
+    document.getElementById("navbar").style.background = "rgba(0,0,0,1)";
   }
   //Highlights navbar tabs on different sections
   var current = "";

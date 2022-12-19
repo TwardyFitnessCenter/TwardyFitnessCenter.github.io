@@ -1,14 +1,15 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "header";
-@import "section1";
-@import "section2";
-@import "section3";
-@import "section4";
-@import "section5";
+@import "intro";
+@import "about";
+@import "gallery";
+@import "prices";
+@import "contact";
+@import "footer";
 
 /* Colors */
 $primary_color: #ffc600;
-$secondary_color: #00a89a;
+$secondary_color: red;
 $light_bg: #f8f8f8;
 $dark_bg: #191919;
 $empty_color: #d9d9d9;
