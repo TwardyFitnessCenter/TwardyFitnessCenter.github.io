@@ -1,25 +1,25 @@
 #!/bin/bash
 
 project_name=placeholder
-subproject_name=main
+preview_project_name=main
 echo Hello, this script will only copy folders in the correct format for our hosted website
 echo Project used on / - \"$project_name\"
 echo Project used on /preview - \"$subproject_name\"
 
-build_mainproject() {
-    echo Build main project \"$project_name\"
+build_project() {
+    echo Build project \"$project_name\"
     npm --prefix src/$project_name/  install src/$project_name/
     npm --prefix src/$project_name/ run build
 }
 
-build_subproject() {
-    echo Build sub project \"$subproject_name\"
+build_preview_project() {
+    echo Build preview project \"$subproject_name\"
     npm --prefix src/$project_name/ install src/$subproject_name/
     npm --prefix src/$project_name/ run build
 }
 
-copy_mainproject() {
-    echo Copy main project files for \"$project_name\"
+copy_project() {
+    echo Copy project files from \"$project_name\"
     cp -r src/assets docs
     cp -r src/lib docs
     cp -r src/${project_name}/js docs
@@ -29,8 +29,8 @@ copy_mainproject() {
     cp -r src/${project_name}/index.html docs
 }
 
-copy_subproject() {
-    echo Copy sub project files for \"$subproject_name\"
+copy_preview_project() {
+    echo Copy preview project files from \"$subproject_name\"
     mkdir docs/preview
     cp -r src/assets docs/preview
     cp -r src/lib docs/preview
@@ -42,12 +42,18 @@ copy_subproject() {
     cp -r src/${subproject_name}/index.html docs/preview
 }
 
-build_mainproject
-build_subproject
+copy_404() {
+    echo Copy 404 error page
+    cp src/404.html docs/
+}
+
+build_project
+build_preview_project
 
 rm -rf docs
 mkdir docs
 cp -r CNAME docs
 
-copy_mainproject
-copy_subproject
+copy_project
+copy_preview_project
+copy_404

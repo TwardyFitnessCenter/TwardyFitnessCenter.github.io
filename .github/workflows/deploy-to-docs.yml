@@ -1,0 +1,33 @@
+# https://medium.com/@danieljimgarcia/publishing-static-sites-to-github-pages-using-github-actions-8040f57dfeaf
+name: deploy-to-docs
+on:
+  pull_request:
+    types:
+    - closed
+    branches:
+    - main
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Generate static files
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - run: ./bash.sh
+
+    - name: Save output files in /docs to main branch
+      run: |
+        git add -A
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m 'Deploy static website'
+        git push --force
