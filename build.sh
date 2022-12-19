@@ -3,23 +3,23 @@
 project_name=placeholder
 subproject_name=main
 echo Hello, this script will only copy folders in the correct format for our hosted website
-echo Project used on / - $project_name
-echo Project used on /preview - $subproject_name
+echo Project used on / - \"$project_name\"
+echo Project used on /preview - \"$subproject_name\"
 
-build_project() {
-    echo Build main project $project_name
+build_mainproject() {
+    echo Build main project \"$project_name\"
     npm --prefix src/$project_name/  install src/$project_name/
     npm --prefix src/$project_name/ run build
 }
 
 build_subproject() {
-    echo Build subproject $subproject_name
+    echo Build sub project \"$subproject_name\"
     npm --prefix src/$project_name/ install src/$subproject_name/
     npm --prefix src/$project_name/ run build
 }
 
-copy_project() {
-    echo Copy files for $project_name
+copy_mainproject() {
+    echo Copy main project files for \"$project_name\"
     cp -r src/assets docs
     cp -r src/lib docs
     cp -r src/${project_name}/js docs
@@ -30,7 +30,7 @@ copy_project() {
 }
 
 copy_subproject() {
-    echo Copy files for $subproject_name
+    echo Copy sub project files for \"$subproject_name\"
     mkdir docs/preview
     cp -r src/assets docs/preview
     cp -r src/lib docs/preview
@@ -42,12 +42,12 @@ copy_subproject() {
     cp -r src/${subproject_name}/index.html docs/preview
 }
 
-build_project
+build_mainproject
 build_subproject
 
 rm -rf docs
 mkdir docs
 cp -r CNAME docs
 
-copy_project
+copy_mainproject
 copy_subproject
