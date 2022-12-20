@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Colors */
 /* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10782,6 +10783,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   transition: 0.3s;
+  font-family: "Roboto", sans-serif;
 }
 
 nav > a {
@@ -10804,7 +10806,6 @@ ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
