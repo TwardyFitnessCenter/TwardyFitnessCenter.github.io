@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Colors */
+/* Fonts */
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10774,18 +10776,24 @@ nav {
   z-index: 1;
   width: 100%;
   height: 52px;
-  background: rgb(20, 20, 20);
+  background: #1C1D1F;
   color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 nav > a {
   display: block;
   height: 75%;
   margin: auto 3rem;
+}
+
+nav ul li.active a {
+  transition: 0.3s;
+  color: #e92b2b;
+  font-size: 130%;
 }
 
 a > img {
@@ -10795,6 +10803,7 @@ a > img {
 ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
@@ -10841,10 +10850,14 @@ li > a:hover {
   z-index: 2;
 }
 
-section:nth-child(1) {
-  background: rgb(255, 0, 191);
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
 }
-
 .video-wrapper {
   position: absolute;
   bottom: 0;
@@ -10862,37 +10875,6 @@ section:nth-child(1) {
   object-fit: cover;
 }
 
-nav ul li.active a {
-  transition: 0.4s;
-  color: rgb(255, 230, 0);
-}
-
-@media only screen and (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
-  .burger {
-    display: flex;
-  }
-}
-section:nth-child(2) {
-  background: rgb(75, 116, 75);
-}
-
-section:nth-child(3) {
-  background: rgb(103, 29, 103);
-}
-
-section:nth-child(4) {
-  background: rgb(175, 62, 62);
-}
-
-section:nth-child(5) {
-  background: rgb(90, 90, 56);
-}
-
-/* Colors */
-/* Fonts */
 /* For mobile phones: */
 ::-webkit-scrollbar {
   display: none;
@@ -10912,6 +10894,14 @@ body {
 
 section {
   height: 100vh;
+}
+
+section:nth-child(2n) {
+  background: #1E1C1C;
+}
+
+section:nth-child(2n+1) {
+  background: #212121;
 }
 
 ol, ul {
