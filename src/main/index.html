@@ -25,21 +25,22 @@
 
     <title>Twardy Fitness Center</title>
   </head>
+
   <body>
     <header>
       <nav id="navbar">
-        <a href="#section-1">
+        <a href="#intro-section">
           <img
             src="..\assets\images\logo_white.png"
             alt="Logo - Twardy Fitness Center."
             widht="100%" height="100%"/>
         </a>
         <ul>
-          <li class="section-1 active"><a href="#section-1">section-1</a></li>
-          <li class="section-2"><a href="#section-2">section-2</a></li>
-          <li class="section-3"><a href="#section-3">section-3</a></li>
-          <li class="section-4"><a href="#section-4">section-4</a></li>
-          <li class="section-5"><a href="#section-5">Contact</a></li>
+          <li class="intro-section active"><a href="#intro-section">Intro</a></li>
+          <li class="about-section"><a href="#about-section">O mnie</a></li>
+          <li class="gallery-section"><a href="#gallery-section">Galeria</a></li>
+          <li class="prices-section"><a href="#prices-section">Ceny</a></li>
+          <li class="contact-section"><a href="#contact-section">Kontakt</a></li>
         </ul>
           <div class="burger">
             <span></span>
@@ -48,7 +49,8 @@
           </div>
       </nav>
     </header>
-    <section id="section-1" class="active">
+
+    <section id="intro-section" class="active">
       <div class="video-wrapper">
         <video
           id="video-background"
@@ -62,13 +64,21 @@
       </div>
     </section>
 
-    <section id="section-2">
+    <section id="about-section">
       <div id="about-me">
+        <!--TODO-->
+      </div>
+      
+      <div id="cooperation">
+        <!--TODO-->
+      </div>
+      
+      <div id="kayaks">
         <!--TODO-->
       </div>
     </section>
 
-    <section id="section-3">
+    <section id="gallery-section">
       <div id="metamorphoses">
         <!--TODO-->
       </div>
@@ -77,25 +87,36 @@
       </div>
     </section>
 
-    <section id="section-4">
+    <section id="prices-section">
       <div id="training-plans">
         <!--TODO-->
       </div>
     </section>
 
-    <section id="section-5">
-      <div id="contact">
+    <section id="contact-section">
+      <div id="map">
         <!--TODO-->
       </div>
-      <div id="footer">
+
+      <div id="email">
+        <!--TODO-->
+      </div>
+      
+      <div id="facebook">
+        <!--TODO-->
+      </div>
+      
+      <div id="instagram">
         <!--TODO-->
       </div>
     </section>
+    
+    <div id="footer">
+      <!--TODO-->
+    </div>
   </body>
 
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <!-- <script src="js/main.js"></script> -->
-  <!-- Can't modify navbar with scroll when 'main.js' included. -->
   <script src="js/nav-scroll.js"></script>
 </html>

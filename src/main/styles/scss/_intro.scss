@@ -13,3 +13,15 @@
   min-height: 100%;
   object-fit: cover;
 }
+nav ul li.active a{
+  transition: 0.4s;
+  color: rgb(255, 230, 0);
+}
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
