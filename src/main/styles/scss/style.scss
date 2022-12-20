@@ -1,17 +1,21 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 /* Colors */
 $active-color: #e92b2b;
 $primary_color: #ff4545;
 $secondary_color: #00a89a;
 $light_bg: #f8f8f8;
-$dark_bg: #191919;
+$dark_bg_1: #212121;
+$dark_bg_2: #1E1C1C;
 $empty_color: #d9d9d9;
 $h_font_color: #fafafa;
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 $primary_font: 'Roboto', sans-serif;
 $secondary_font: "Rubik Dirt";
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+/* Stylesheets */
 @import "header";
 @import "section1";
 @import "section2";
@@ -19,7 +23,6 @@ $secondary_font: "Rubik Dirt";
 @import "section4";
 @import "section5";
 
-/* For mobile phones: */
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
@@ -37,10 +40,10 @@ section {
   height: 100vh;
 }
 section:nth-child(2n) {
-  background: #1E1C1C;
+  background: $dark_bg_1;
 }
 section:nth-child(2n+1) {
-  background: #212121;
+  background: $dark_bg_2;
 }
 ol,ul {
   margin: 0;

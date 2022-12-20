@@ -7,11 +7,13 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.height = "72px";
+    document.getElementById("navbar").style.height = "76px";
     document.getElementById("navbar").style.background ="rgba(20,20,20,0)";
+    document.getElementById("navbar").style.fontSize ="18px"; // change font-size with scroll
   } else {
-    document.getElementById("navbar").style.height = "52px";
+    document.getElementById("navbar").style.height = "60px";
     document.getElementById("navbar").style.background = "rgba(20,20,20,1)";
+    document.getElementById("navbar").style.fontSize ="16px"; // change font-size with scroll
   }
   //Highlights navbar tabs on different sections
   var current = "";
