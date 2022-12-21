@@ -8,9 +8,9 @@ $dark_bg_1: rgb(25,24,27);
 $dark_bg_2: rgb(34, 33, 35);
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-$primary_font: 'Roboto', sans-serif;
-$secondary_font: "Rubik Dirt";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Dirt&display=swap');
+$primary_font: 'Roboto', sans-serif; //font-family
+$secondary_font: 'Rubik Dirt', sans-serif; //font-family
 
 /* Stylesheets */
 @import "header";

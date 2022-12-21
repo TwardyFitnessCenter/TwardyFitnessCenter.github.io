@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 60px);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -12,4 +12,32 @@
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+.h1-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+}
+h1 {
+  color: aliceblue;
+  font-family: $secondary_font;
+  font-weight: 400;
+  font-size: 6rem;
+  text-align: center;
+  margin: 0 5rem;
+  letter-spacing: 2px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
 }
