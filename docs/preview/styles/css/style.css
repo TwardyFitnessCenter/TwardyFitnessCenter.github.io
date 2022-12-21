@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Dirt&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10769,23 +10770,34 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-nav {
+/* Colors */
+/* Fonts */
+/* Stylesheets */
+#navbar {
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 52px;
-  background: rgb(0, 0, 0);
+  height: 68px;
+  background: rgb(25, 24, 27);
   color: aliceblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.4s;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 nav > a {
   display: block;
   height: 75%;
-  margin: auto 3rem;
+  margin: auto 4rem auto 4rem;
+}
+
+nav ul li.active a {
+  transition: 0.3s;
+  color: rgb(255, 191, 0);
 }
 
 a > img {
@@ -10795,23 +10807,28 @@ a > img {
 ul {
   list-style-type: none;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: stretch;
+  padding: 0;
+  margin: 0 4rem 0 0;
   text-decoration: none;
 }
 
 li {
-  margin-right: 3rem;
+  margin-left: 4rem;
 }
 
 li > a {
   color: aliceblue;
   text-decoration: none;
   transition: 0.4s;
+  white-space: nowrap;
+  letter-spacing: 1px;
 }
 
 li > a:hover {
   text-decoration: none;
-  color: rgb(99, 98, 94);
+  color: rgb(168, 168, 168);
 }
 
 .burger {
@@ -10823,7 +10840,7 @@ li > a:hover {
   user-select: none;
   flex-direction: column;
   justify-content: center;
-  margin-right: 3rem;
+  margin-right: 4rem;
   cursor: pointer;
 }
 
@@ -10841,15 +10858,65 @@ li > a:hover {
   z-index: 2;
 }
 
-section:nth-child(1) {
-  background: rgb(255, 0, 191);
+h1, .h1 {
+  margin: 0 2rem;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 
+#logotype {
+  transition: all 0.3s ease-out;
+}
+#logotype h1, #logotype .h1 {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  #logotype {
+    display: none;
+  }
+  nav > a {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  li {
+    margin-left: 3rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  li {
+    margin-left: 3rem;
+  }
+  nav ul {
+    margin-right: 3rem;
+  }
+}
+/* Small */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    margin-right: 3rem;
+  }
+}
+/* Extra-small */
+@media only screen and (max-width: 576px) {
+  nav > a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .burger {
+    margin-right: 2rem;
+  }
+}
 .video-wrapper {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 68px);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -10862,38 +10929,43 @@ section:nth-child(1) {
   object-fit: cover;
 }
 
-nav ul li.active a {
-  transition: 0.4s;
-  color: rgb(255, 230, 0);
+.h2-container {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 100%;
 }
 
+h2, .h2 {
+  color: aliceblue;
+  font-family: "Rubik Dirt", sans-serif;
+  font-weight: 200;
+  font-size: 5rem;
+  text-align: right;
+  margin: 0 2rem;
+  letter-spacing: 2px;
+}
+
+h2.yellow, .yellow.h2 {
+  color: rgb(255, 191, 0);
+}
+
+/* Medium */
+@media only screen and (max-width: 992px) {
+  h2, .h2 {
+    margin: 0 1rem;
+    letter-spacing: 1px;
+    font-size: 3rem;
+  }
+}
+/* Small */
 @media only screen and (max-width: 768px) {
-  nav ul {
-    display: none;
+  h2, .h2 {
+    margin: 0 1rem;
+    letter-spacing: 1px;
+    font-size: 2rem;
   }
-  .burger {
-    display: flex;
-  }
 }
-section:nth-child(2) {
-  background: rgb(75, 116, 75);
-}
-
-section:nth-child(3) {
-  background: rgb(103, 29, 103);
-}
-
-section:nth-child(4) {
-  background: rgb(175, 62, 62);
-}
-
-section:nth-child(5) {
-  background: rgb(90, 90, 56);
-}
-
-/* Colors */
-/* Fonts */
-/* For mobile phones: */
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
@@ -10906,7 +10978,6 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: 0;
 }
 
@@ -10914,8 +10985,12 @@ section {
   height: 100vh;
 }
 
-ol, ul {
-  margin: 0;
+section:nth-child(2n) {
+  background: rgb(25, 24, 27);
+}
+
+section:nth-child(2n+1) {
+  background: rgb(34, 33, 35);
 }
 
 /*# sourceMappingURL=style.css.map */
