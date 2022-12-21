@@ -1,4 +1,18 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* Colors */
+$primary_color: rgb(255,191,0);
+$complementary_color_1: rgb(16,151,255);
+$complementary_color_2: rgb(122,22,255);
+$dark_bg_1: rgb(25,24,27);
+$dark_bg_2: rgb(34, 33, 35);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+$primary_font: 'Roboto', sans-serif;
+$secondary_font: "Rubik Dirt";
+
+/* Stylesheets */
 @import "header";
 @import "intro";
 @import "about";
@@ -7,19 +21,6 @@
 @import "contact";
 @import "footer";
 
-/* Colors */
-$primary_color: #ffc600;
-$secondary_color: red;
-$light_bg: #f8f8f8;
-$dark_bg: #191919;
-$empty_color: #d9d9d9;
-$h_font_color: #fafafa;
-
-/* Fonts */
-$primary_font: "Roboto";
-$secondary_font: "Rubik Dirt";
-
-/* For mobile phones: */
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
@@ -36,6 +37,9 @@ body {
 section {
   height: 100vh;
 }
-ol,ul {
-  margin: 0;
+section:nth-child(2n) {
+  background: $dark_bg_1;
+}
+section:nth-child(2n+1) {
+  background: $dark_bg_2;
 }
