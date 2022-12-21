@@ -10,8 +10,7 @@ $transparent: rgba(20, 20, 20, 0);
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Dirt&display=swap');
-$primary_font: 'Roboto', sans-serif; //font-family
-$secondary_font: 'Rubik Dirt', sans-serif; //font-family
+$primary_font: fantasy;
 
 /* Stylesheets */
 @import "header";

@@ -1,7 +1,6 @@
 #intro-section {
   background: black;
 }
-
 .video-wrapper {
   position: absolute;
   bottom: 0;
@@ -25,14 +24,15 @@
 }
 h2 {
   color: aliceblue;
-  font-family: $secondary_font;
+  font-family: $primary_font;
+  font-style: italic;
   font-weight: 200;
   font-size: 5rem;
   text-align: right;
   margin: 0 2rem;
   letter-spacing: 2px;
 }
-h2.yellow {
+h2.primary-color {
   color: $primary_color
 }
 /* Medium */
