@@ -47,11 +47,19 @@
           <li class="prices-section"><a href="#prices-section">CENNIK</a></li>
           <li class="contact-section"><a href="#contact-section">KONTAKT</a></li>
         </ul>
-          <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+
+        <ul class="menu">
+          <li class="intro-section active"><a href="#intro-section">INTRO</a></li>
+          <li class="about-section"><a href="#about-section">O MNIE</a></li>
+          <li class="gallery-section"><a href="#gallery-section">GALERIA</a></li>
+          <li class="prices-section"><a href="#prices-section">CENNIK</a></li>
+          <li class="contact-section"><a href="#contact-section">KONTAKT</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -69,7 +77,7 @@
         
         <div class="rotate-notification">
           <img class="rotate-image" src="../assets/images/rotate-phone.png" />
-          <p class="rotate-label">Obróć telefon do pełnego widoku video</p>
+          <p class="rotate-label">Obróć telefon do pełnego widoku wideo</p>
         </div>
 
         <div class="h2-container">
@@ -135,4 +143,5 @@
   <script src="lib/jquery/dist/jquery.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/nav-scroll.js"></script>
+  <script src="js/nav-hamburger.js"></script>
 </html>
