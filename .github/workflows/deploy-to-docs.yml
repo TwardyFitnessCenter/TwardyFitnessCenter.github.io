@@ -1,6 +1,6 @@
 # https://medium.com/@danieljimgarcia/publishing-static-sites-to-github-pages-using-github-actions-8040f57dfeaf
 name: deploy-to-docs
-on:
+on: 
   pull_request:
     types:
     - closed
