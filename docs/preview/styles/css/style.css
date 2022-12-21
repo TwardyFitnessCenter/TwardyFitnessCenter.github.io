@@ -10778,7 +10778,7 @@ textarea.form-control-lg {
   z-index: 1;
   width: 100%;
   height: 68px;
-  background: rgb(25, 24, 27);
+  background: rgba(20, 20, 20, 0);
   color: aliceblue;
   display: flex;
   justify-content: space-between;
@@ -10920,6 +10920,10 @@ h1, .h1 {
     margin-right: 2rem;
   }
 }
+#intro-section {
+  background: black;
+}
+
 .video-wrapper {
   position: absolute;
   bottom: 0;
@@ -10974,6 +10978,22 @@ h2.yellow, .yellow.h2 {
     font-size: 2rem;
   }
 }
+#about-section {
+  background: rgb(25, 24, 27);
+}
+
+#gallery-section {
+  background: rgb(34, 33, 35);
+}
+
+#prices-section {
+  background: rgb(25, 24, 27);
+}
+
+#contact-section {
+  background: rgb(34, 33, 35);
+}
+
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
