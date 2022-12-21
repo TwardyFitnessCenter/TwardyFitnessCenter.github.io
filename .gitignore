@@ -1,5 +1,8 @@
 node_modules
 
+src/main/styles/css/
+src/placeholder/styles/css/
+
 .DS_Store
 
 sass
