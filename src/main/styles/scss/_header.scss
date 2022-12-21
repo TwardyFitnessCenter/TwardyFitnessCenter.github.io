@@ -1,3 +1,5 @@
+@import "components/hamburger-menu";
+
 #navbar {
   position: fixed;
   z-index: 1;
@@ -26,65 +28,41 @@
 }
 
 nav > a {
-display: block;
-height: 75%;
-margin: auto 4rem auto 4rem;
+  display: block;
+  height: 75%;
+  margin: auto 4rem auto 4rem;
 }
 nav ul li.active a {
-transition: 0.3s;
-color: $primary-color;
+  transition: 0.3s;
+  color: $primary-color;
 }
 a > img {
-display: block;
+  display: block;
 }
 ul {
-list-style-type: none;
-display: flex;
-align-items: center;
-justify-content: stretch;
-padding: 0;
-margin: 0 4rem 0 0;
-text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  padding: 0;
+  margin: 0 4rem 0 0;
+  text-decoration: none;
 }
 li {
-margin-left: 4rem;
+  margin-left: 4rem;
 }
 li > a {
-color: aliceblue;
-text-decoration: none;
-transition: 0.4s;
-white-space: nowrap; //prevent text to taking up more than 1 line
-letter-spacing: 1px;
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.4s;
+  white-space: nowrap; //prevent text to taking up more than 1 line
+  letter-spacing: 1px;
 }
 li > a:hover {
-text-decoration: none;
-color: rgb(168, 168, 168);
+  text-decoration: none;
+  color: rgb(168, 168, 168);
 }
-.burger {
-display: none;
-position: relative;    
-z-index: 2;
-height: 60%;
--webkit-user-select: none;
-user-select: none;
-flex-direction: column;
-justify-content: center;
-margin-right: 4rem;
-cursor: pointer;
-}
-.burger span {
-display: block;
-width: 30px;
-height: 2px;
-margin-top: 3px;
-margin-bottom: 3px;
-position: relative;
-top: auto;
-bottom: auto;
-background: aliceblue ;
-border-radius: 3px;
-z-index: 2;
-}
+
 h1 {
   margin: 0 2rem;
   letter-spacing: 2px;
@@ -93,10 +71,6 @@ h1 {
 }
 #logotype {
   align-self: center;
-  // transition: all 0.3s ease-out;
-  // h1 {
-  //   font-size: 2.5rem;
-  // }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -124,10 +98,6 @@ h1 {
   nav ul {
     display: none;
   }
-  .burger {
-    display: flex;
-    margin-right: 3rem;
-  }
 }
 /* Extra-small */
 @media only screen and (max-width: 576px) {
@@ -135,7 +105,7 @@ h1 {
     margin-left: 2rem;
     margin-right: 2rem;
     }
-  .burger {
-    margin-right: 2rem;
-  }
+  // .burger {
+  //   margin-right: 2rem;
+  // }
 }
