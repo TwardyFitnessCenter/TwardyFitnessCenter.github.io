@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 60px;
+  height: 68px;
   background: $dark_bg_1;
   color: aliceblue;
   display: flex;
@@ -10,12 +10,13 @@
   align-items: center;
   transition: 0.3s;
   font-family: $primary_font;
+  font-weight: 500;
   font-size: 16px;
 }
 nav > a {
 display: block;
 height: 75%;
-margin: auto 5rem;
+margin: auto 4rem auto 4rem;
 }
 nav ul li.active a {
 transition: 0.3s;
@@ -28,13 +29,13 @@ ul {
 list-style-type: none;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: stretch;
 padding: 0;
-margin: 0 5rem 0 0;
+margin: 0 4rem 0 0;
 text-decoration: none;
 }
 li {
-margin-left: 3rem;
+margin-left: 4rem;
 }
 li > a {
 color: aliceblue;
@@ -56,7 +57,7 @@ height: 60%;
 user-select: none;
 flex-direction: column;
 justify-content: center;
-margin-right: 5rem;
+margin-right: 4rem;
 cursor: pointer;
 }
 .burger span {
@@ -72,12 +73,52 @@ background: aliceblue ;
 border-radius: 3px;
 z-index: 2;
 }
-/* Mobile */
+h1 {
+  margin: 0 2rem;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  white-space: nowrap; //prevent text to taking up more than 1 line
+}
+#logotype {
+  transition: all 0.3s ease-out;
+}
+@media only screen and (max-width: 1400px) {
+  #logotype {
+    display: none;
+  }
+  nav > a {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    }
+  li {
+    margin-left: 3rem;  
+  }
+}
+@media only screen and (max-width: 992px) {
+  li {
+    margin-left: 3rem;  
+  }
+  nav ul {
+    margin-right: 3rem;
+  }
+}
+/* Small */
 @media only screen and (max-width: 768px) {
-nav ul {
-  display: none;
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    margin-right: 3rem;
+  }
 }
-.burger {
-  display: flex;
-}
+/* Extra-small */
+@media only screen and (max-width: 576px) {
+  nav > a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+  .burger {
+    margin-right: 2rem;
+  }
 }
